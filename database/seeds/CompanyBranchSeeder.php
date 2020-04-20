@@ -3,7 +3,7 @@
 use App\Models\Companybranch;
 use Illuminate\Database\Seeder;
 
-class CompanybranchSeeder extends Seeder
+class CompanyBranchSeeder extends Seeder
 {
     /**
      * Run the database seeds.
