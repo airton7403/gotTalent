@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\CompanyBranch;
+use App\Models\Project;
 use Illuminate\Database\Seeder;
 
-class CompanyBranchSeeder extends Seeder
+class ProjectSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class CompanyBranchSeeder extends Seeder
      */
     public function run()
     {
-        factory(CompanyBranch::class, 1)->create();
+        factory(Project::class, 85)->create();
     }
 }
