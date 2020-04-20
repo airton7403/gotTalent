@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Company extends Model
+class Companybranch extends Model
 {
     protected $fillable = [];
     protected $hidden = [];
@@ -12,6 +12,6 @@ class Company extends Model
 
     public function branch()
     {
-        return $this->hasMany(Companybranch::class);
+        return $this->hasOne(Company::class);
     }
 }
