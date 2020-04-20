@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $fillable = [];
-    protected $hidden = [];
+    protected $hidden = [
+        'id', 'user_id', 'company_id'
+    ];
     protected $cast = [];
 
     public function author()
