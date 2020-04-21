@@ -7,11 +7,11 @@ use Faker\Generator as Faker;
 
 $factory->define(TypeCompetence::class, function (Faker $faker) {
     return [
-        'name' => $faker->randomElement(
-            'Apredizado',
+        'name' => $faker->unique()->randomElement([
+            'Aprendizado',
             'Atitude',
             'Bom relacionamento interpessoal',
-            'Colaboraçao',
+            'Colaboração',
             'Comunicação',
             'Conhecimentos Técnicos',
             'Controle emocional',
@@ -20,6 +20,6 @@ $factory->define(TypeCompetence::class, function (Faker $faker) {
             'Gestão de conflitos',
             'Iniciativa / Proatividade',
             'Inovação / Criatividade'
-        )
+        ])
     ];
 });

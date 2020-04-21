@@ -12,6 +12,6 @@ class TypeCompetenceSeeder extends Seeder
      */
     public function run()
     {
-        factory(TypeCompetence::class)->create();
+        factory(TypeCompetence::class, 12)->create();
     }
 }
