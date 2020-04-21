@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             TypeCompetenceSeeder::class,
             CompetenceSeeder::class,
             SubCompetenceSeeder::class,
+            QuestionSeeder::class
         ]);
     }
 }
