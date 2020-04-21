@@ -6,5 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserProfile extends Model
 {
-    //
+    protected $fillable = [];
+    protected $hidden = [
+        'id', 'company_id', 'user_id', 'manager_id'
+    ];
+    protected $cast = [];
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
+    }
+
+    public function manager()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
