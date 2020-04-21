@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             TypeCompetenceSeeder::class,
             CompetenceSeeder::class,
+            SubCompetenceSeeder::class,
         ]);
     }
 }
