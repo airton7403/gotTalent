@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Question::class, function (Faker $faker) {
     return [
         'sub_competence_id' => $faker->numberBetween(1,20),
-        'competence_id' => $faker->numberBetween(1,16),
+        'competence_id' => $faker->numberBetween(1,15),
         'question_third_person' => $faker->unique()->randomElement([
             'Age, constantemente, baseado na redução do possível impacto negativo de suas decisões sobre os demais setores da empresa.',
             'O quanto o colaborador esta disponível para o trabalho e cumpri as suas responsabilidades com disposição.',

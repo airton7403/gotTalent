@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompanyPositionController;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,14 +13,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            UserSeeder::class,
             CompanySeeder::class,
-            UserProfileSeeder::class,
+            UserSeeder::class,
             ProjectSeeder::class,
             TypeCompetenceSeeder::class,
             CompetenceSeeder::class,
             SubCompetenceSeeder::class,
-            QuestionSeeder::class
+            CompanyPositionSeeder::class,
+            QuestionSeeder::class,
+            UserProfileSeeder::class,
         ]);
     }
 }

@@ -10,8 +10,8 @@ class Company extends Model
     protected $hidden = [];
     protected $cast = [];
 
-    public function branch()
+    public function position()
     {
-        return $this->hasMany(Companybranch::class);
+        return $this->hasMany(CompanyPosition::class);
     }
 }

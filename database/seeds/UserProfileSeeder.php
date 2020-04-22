@@ -12,6 +12,6 @@ class UserProfileSeeder extends Seeder
      */
     public function run()
     {
-        factory(UserProfile::class, 1)->create();
+        factory(UserProfile::class, 5)->create();
     }
 }
