@@ -20,9 +20,9 @@ class UserController extends Controller
     public function index()
     {
         $user = $this->user->with([
-            'projects', 'profile', 'profile.company', 'profile.manager', 'profile.manager.profile'
+            'projects', 'profile', 'profile.company', 'profile.company_position', 'profile.manager'
         ])->paginate(10);
-
+        
         return response()->json($user, 200);
     }
 
