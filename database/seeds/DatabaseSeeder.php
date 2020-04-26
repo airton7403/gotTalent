@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             CompanyPositionSeeder::class,
             QuestionSeeder::class,
             CompanyDepartmentSeeder::class,
+            CompanyBoardSeeder::class,
             UserProfileSeeder::class,
         ]);
     }

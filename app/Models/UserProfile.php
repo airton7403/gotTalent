@@ -27,6 +27,11 @@ class UserProfile extends Model
         return $this->belongsTo(CompanyDepartment::class);
     }
 
+    public function company_board()
+    {
+        return $this->belongsTo(CompanyBoard::class);
+    }
+
     public function manager()
     {
         return $this->belongsTo(User::class);
