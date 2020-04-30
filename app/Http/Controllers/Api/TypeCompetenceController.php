@@ -1,17 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Models\TypeCompetence;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
 
-class UserController extends Controller
+class TypeCompetenceController extends Controller
 {
-    private $user;
-    public function __construct(User $user)
-    {
-        $this->user = $user;
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,11 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = $this->user->with([
-            'projects', 'profile', 'profile.company', 'profile.company_position', 'profile.company_department', 'profile.company_board', 'profile.manager'
-        ])->paginate(10);
-        
-        return response()->json($user, 200);
+        //
     }
 
     /**
@@ -50,10 +42,10 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\TypeCompetence  $typeCompetence
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(TypeCompetence $typeCompetence)
     {
         //
     }
@@ -61,10 +53,10 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\TypeCompetence  $typeCompetence
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(TypeCompetence $typeCompetence)
     {
         //
     }
@@ -73,10 +65,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\TypeCompetence  $typeCompetence
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, TypeCompetence $typeCompetence)
     {
         //
     }
@@ -84,10 +76,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\TypeCompetence  $typeCompetence
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(TypeCompetence $typeCompetence)
     {
         //
     }

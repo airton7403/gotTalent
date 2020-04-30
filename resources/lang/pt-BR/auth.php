@@ -15,7 +15,7 @@ return [
 
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'token_in_blacklist' => 'The token has been blacklisted.',
-    'logout' => 'Successfully logged out!',
+    'token_in_blacklist' => 'O token foi colocado na lista negra.',
+    'logout' => 'Você deslogou com sucesso!',
 
 ];

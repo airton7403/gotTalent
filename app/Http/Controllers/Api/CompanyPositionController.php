@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\CompanyBoard;
+use App\Models\CompanyPosition;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CompanyBoardController extends Controller
+class CompanyPositionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class CompanyBoardController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CompanyBoard  $companyBoard
+     * @param  \App\Models\CompanyPosition  $companyPosition
      * @return \Illuminate\Http\Response
      */
-    public function show(CompanyBoard $companyBoard)
+    public function show(CompanyPosition $companyPosition)
     {
         //
     }
@@ -52,10 +53,10 @@ class CompanyBoardController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CompanyBoard  $companyBoard
+     * @param  \App\Models\CompanyPosition  $companyPosition
      * @return \Illuminate\Http\Response
      */
-    public function edit(CompanyBoard $companyBoard)
+    public function edit(CompanyPosition $companyPosition)
     {
         //
     }
@@ -64,10 +65,10 @@ class CompanyBoardController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CompanyBoard  $companyBoard
+     * @param  \App\Models\CompanyPosition  $companyPosition
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CompanyBoard $companyBoard)
+    public function update(Request $request, CompanyPosition $companyPosition)
     {
         //
     }
@@ -75,10 +76,10 @@ class CompanyBoardController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CompanyBoard  $companyBoard
+     * @param  \App\Models\CompanyPosition  $companyPosition
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CompanyBoard $companyBoard)
+    public function destroy(CompanyPosition $companyPosition)
     {
         //
     }

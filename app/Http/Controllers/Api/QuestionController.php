@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\UserProfile;
+use App\Models\Question;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UserProfileController extends Controller
+class QuestionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class UserProfileController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\UserProfile  $userProfile
+     * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function show(UserProfile $userProfile)
+    public function show(Question $question)
     {
         //
     }
@@ -52,10 +53,10 @@ class UserProfileController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\UserProfile  $userProfile
+     * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserProfile $userProfile)
+    public function edit(Question $question)
     {
         //
     }
@@ -64,10 +65,10 @@ class UserProfileController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\UserProfile  $userProfile
+     * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, UserProfile $userProfile)
+    public function update(Request $request, Question $question)
     {
         //
     }
@@ -75,10 +76,10 @@ class UserProfileController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\UserProfile  $userProfile
+     * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserProfile $userProfile)
+    public function destroy(Question $question)
     {
         //
     }

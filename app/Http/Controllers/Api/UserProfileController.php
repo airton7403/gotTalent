@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\CompanyDepartment;
+use App\Models\UserProfile;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CompanyDepartmentController extends Controller
+class UserProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class CompanyDepartmentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CompanyDepartment  $companyDepartment
+     * @param  \App\Models\UserProfile  $userProfile
      * @return \Illuminate\Http\Response
      */
-    public function show(CompanyDepartment $companyDepartment)
+    public function show(UserProfile $userProfile)
     {
         //
     }
@@ -52,10 +53,10 @@ class CompanyDepartmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CompanyDepartment  $companyDepartment
+     * @param  \App\Models\UserProfile  $userProfile
      * @return \Illuminate\Http\Response
      */
-    public function edit(CompanyDepartment $companyDepartment)
+    public function edit(UserProfile $userProfile)
     {
         //
     }
@@ -64,10 +65,10 @@ class CompanyDepartmentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CompanyDepartment  $companyDepartment
+     * @param  \App\Models\UserProfile  $userProfile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CompanyDepartment $companyDepartment)
+    public function update(Request $request, UserProfile $userProfile)
     {
         //
     }
@@ -75,10 +76,10 @@ class CompanyDepartmentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CompanyDepartment  $companyDepartment
+     * @param  \App\Models\UserProfile  $userProfile
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CompanyDepartment $companyDepartment)
+    public function destroy(UserProfile $userProfile)
     {
         //
     }

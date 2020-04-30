@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Question;
+use App\Models\CompanyBoard;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class QuestionController extends Controller
+class CompanyBoardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class QuestionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Question  $question
+     * @param  \App\Models\CompanyBoard  $companyBoard
      * @return \Illuminate\Http\Response
      */
-    public function show(Question $question)
+    public function show(CompanyBoard $companyBoard)
     {
         //
     }
@@ -52,10 +53,10 @@ class QuestionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Question  $question
+     * @param  \App\Models\CompanyBoard  $companyBoard
      * @return \Illuminate\Http\Response
      */
-    public function edit(Question $question)
+    public function edit(CompanyBoard $companyBoard)
     {
         //
     }
@@ -64,10 +65,10 @@ class QuestionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Question  $question
+     * @param  \App\Models\CompanyBoard  $companyBoard
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Question $question)
+    public function update(Request $request, CompanyBoard $companyBoard)
     {
         //
     }
@@ -75,10 +76,10 @@ class QuestionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Question  $question
+     * @param  \App\Models\CompanyBoard  $companyBoard
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Question $question)
+    public function destroy(CompanyBoard $companyBoard)
     {
         //
     }

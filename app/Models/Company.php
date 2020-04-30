@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
     protected $fillable = [];
-    protected $hidden = [];
+    protected $hidden = [
+        'id'
+    ];
     protected $cast = [];
 
     public function position()

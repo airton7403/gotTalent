@@ -1,12 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\CompanyPosition;
+use App\Models\Project;
+use App\Http\Controllers\Controller;
+use Exception;
 use Illuminate\Http\Request;
 
-class CompanyPositionController extends Controller
+class ProjectController extends Controller
 {
+    private $project;
+    public function __construct(Project $project)
+    {
+        $this->project = $project;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +21,12 @@ class CompanyPositionController extends Controller
      */
     public function index()
     {
-        //
+        try {
+            $project = $this->project->with(['author'])->paginate(10);
+            return response()->json($project, 200);
+        } catch (Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 200);
+        }
     }
 
     /**
@@ -41,10 +53,10 @@ class CompanyPositionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CompanyPosition  $companyPosition
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(CompanyPosition $companyPosition)
+    public function show(Project $project)
     {
         //
     }
@@ -52,10 +64,10 @@ class CompanyPositionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CompanyPosition  $companyPosition
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(CompanyPosition $companyPosition)
+    public function edit(Project $project)
     {
         //
     }
@@ -64,10 +76,10 @@ class CompanyPositionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CompanyPosition  $companyPosition
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CompanyPosition $companyPosition)
+    public function update(Request $request, Project $project)
     {
         //
     }
@@ -75,10 +87,10 @@ class CompanyPositionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CompanyPosition  $companyPosition
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CompanyPosition $companyPosition)
+    public function destroy(Project $project)
     {
         //
     }
